@@ -1240,8 +1240,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0700"/>
 			<Command code="0701" interval="100"/>
 			<Command code="0800"/>
-			<Command code="0A05" divider="10"/>
-			<Command code="0A06" divider="10"/>
+			<Command code="0A05" isSigned="" divider="10"/>
+			<Command code="0A06" isSigned="" divider="10"/>
 			<Command code="0AE4" isSigned="" divider="10"/>
 			<Command code="0B0E" divider="1" interval="10"/>
 
@@ -1262,10 +1262,10 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 		</Commands>
 		<!-- доступные для регулирования пределы -->
 		<Limits>
-			<Limit maxCode="0302" minCode="0301" upperCode="0306" unit="mA" show="max">Current</Limit>
-			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" unit="(deg)" show="both">NTC temperature</Limit>
-			<Limit minCode="0A12" maxCode="0A11" bottomCode="0A14" upperCode="0A13" unit="(deg)" show="both">TEC temperature</Limit>
-			<Limit maxCode="0A17" bottom="0.0" upper="4.0" show="max" unit="A">Max. TEC Current</Limit>
+			<Limit maxCode="0302" bottomCode="0301" upperCode="0306" show="max" unit="mA">LD current set up limit</Limit>
+			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" show="both" unit="(deg)">NTC temperature warning limits</Limit>
+			<Limit minCode="0A12" maxCode="0A11" bottomCode="0A14" upperCode="0A13" show="both" unit="(deg)">TEC temperature warning limits</Limit>
+			<Limit maxCode="0A17" bottom="0.0" upper="4.0" show="max" unit="A">TEC current limit</Limit>
 		</Limits>
 		<!--  калибровка -->
 		<CalibrationKoefs>
@@ -1316,11 +1316,11 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			</Led>
 			<Led label="IntLock">
 				<LedMask code="0800" mask="0002" maskColor="#ffff00">Interlock</LedMask>
-				<LedMask code="0800" mask="0020" maskColor="#ff0000">LD Overheat</LedMask>
+				<LedMask code="0800" mask="0020" maskColor="#ff0000">External NTC temperature exceeds limits</LedMask>
 			</Led>
 			<Led label="Error">
-				<LedMask code="0800" mask="0010" maskColor="#ffff00">Overheat warning</LedMask>
-				<LedMask code="0800" mask="0008" maskColor="#ff0000">Over current or Overheat</LedMask>
+				<LedMask code="0800" mask="0010" maskColor="#ffff00">LD temperature exceeds limits</LedMask>
+				<LedMask code="0800" mask="0008" maskColor="#ff0000">LD Over current</LedMask>
 				<LedMask code="0800" mask="0040" maskColor="#ff0000">TEC Error</LedMask>
 				<LedMask code="0800" mask="0080" maskColor="#ff0000">TEC Self-heat</LedMask>
 			</Led>
@@ -1376,10 +1376,10 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 		</Commands>
 		<!-- доступные для регулирования пределы -->
 		<Limits>
-			<Limit maxCode="0302" minCode="0301" upperCode="0306" unit="mA" show="max">Current</Limit>
-			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" unit="(deg)" show="both">NTC temperature</Limit>
-			<Limit minCode="0A12" maxCode="0A11" bottomCode="0A14" upperCode="0A13" unit="(deg)" show="both">TEC temperature</Limit>
-			<Limit maxCode="0A17" bottom="0.0" upper="4.0" show="max" unit="A">Max. TEC Current</Limit>
+			<Limit maxCode="0302" bottomCode="0301" upperCode="0306" show="max" unit="mA">LD current set up limit</Limit>
+			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" show="both" unit="(deg)">NTC temperature warning limits</Limit>
+			<Limit minCode="0A12" maxCode="0A11" bottomCode="0A14" upperCode="0A13" show="both" unit="(deg)">TEC temperature warning limits</Limit>
+			<Limit maxCode="0A17" bottom="0.0" upper="4.0" show="max" unit="A">TEC current limit</Limit>
 		</Limits>
 		<!--  калибровка -->
 		<CalibrationKoefs>
@@ -1430,11 +1430,11 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			</Led>
 			<Led label="IntLock">
 				<LedMask code="0800" mask="0002" maskColor="#ffff00">Interlock</LedMask>
-				<LedMask code="0800" mask="0020" maskColor="#ff0000">LD Overheat</LedMask>
+				<LedMask code="0800" mask="0020" maskColor="#ff0000">External NTC temperature exceeds limits</LedMask>
 			</Led>
 			<Led label="Error">
-				<LedMask code="0800" mask="0010" maskColor="#ffff00">Overheat warning</LedMask>
-				<LedMask code="0800" mask="0008" maskColor="#ff0000">Over current or Overheat</LedMask>
+				<LedMask code="0800" mask="0010" maskColor="#ffff00">LD temperature exceeds limits</LedMask>
+				<LedMask code="0800" mask="0008" maskColor="#ff0000">LD Over current</LedMask>
 				<LedMask code="0800" mask="0040" maskColor="#ff0000">TEC Error</LedMask>
 				<LedMask code="0800" mask="0080" maskColor="#ff0000">TEC Self-heat</LedMask>
 			</Led>
@@ -1468,8 +1468,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0700"/>
 			<Command code="0701" interval="100"/>
 			<Command code="0800"/>
-			<Command code="0A05" divider="10"/>
-			<Command code="0A06" divider="10"/>
+			<Command code="0A05" isSigned="" divider="10"/>
+			<Command code="0A06" isSigned="" divider="10"/>
 			<Command code="0AE4" isSigned="" divider="10"/>
 			<Command code="0B0E" divider="1" interval="10"/>
 
@@ -1491,10 +1491,10 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 		</Commands>
 		<!-- доступные для регулирования пределы -->
 		<Limits>
-			<Limit maxCode="0302" minCode="0301" upperCode="0306" unit="mA" show="max">Current</Limit>
-			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" unit="(deg)" show="both">NTC temperature</Limit>
-			<Limit minCode="0A12" maxCode="0A11" bottomCode="0A14" upperCode="0A13" unit="(deg)" show="both">TEC temperature</Limit>
-			<Limit maxCode="0A17" bottom="0.0" upper="4.0" show="max" unit="A">Max. TEC Current</Limit>
+			<Limit maxCode="0302" bottomCode="0301" upperCode="0306" show="max" unit="mA">LD current set up limit</Limit>
+			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" show="both" unit="(deg)">NTC temperature warning limits</Limit>
+			<Limit minCode="0A12" maxCode="0A11" bottomCode="0A14" upperCode="0A13" show="both" unit="(deg)">TEC temperature warning limits</Limit>
+			<Limit maxCode="0A17" bottom="0.0" upper="4.0" show="max" unit="A">TEC current limit</Limit>
 		</Limits>
 		<!--  калибровка -->
 		<CalibrationKoefs>
@@ -1545,11 +1545,11 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			</Led>
 			<Led label="IntLock">
 				<LedMask code="0800" mask="0002" maskColor="#ffff00">Interlock</LedMask>
-				<LedMask code="0800" mask="0020" maskColor="#ff0000">LD Overheat</LedMask>
+				<LedMask code="0800" mask="0020" maskColor="#ff0000">External NTC temperature exceeds limits</LedMask>
 			</Led>
 			<Led label="Error">
-				<LedMask code="0800" mask="0010" maskColor="#ffff00">Overheat warning</LedMask>
-				<LedMask code="0800" mask="0008" maskColor="#ff0000">Over current or Overheat</LedMask>
+				<LedMask code="0800" mask="0010" maskColor="#ffff00">LD temperature exceeds limits</LedMask>
+				<LedMask code="0800" mask="0008" maskColor="#ff0000">LD Over current</LedMask>
 				<LedMask code="0800" mask="0040" maskColor="#ff0000">TEC Error</LedMask>
 				<LedMask code="0800" mask="0080" maskColor="#ff0000">TEC Self-heat</LedMask>
 			</Led>
@@ -1583,8 +1583,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0700"/>
 			<Command code="0701" interval="100"/>
 			<Command code="0800"/>
-			<Command code="0A05" divider="10"/>
-			<Command code="0A06" divider="10"/>
+			<Command code="0A05" isSigned="" divider="10"/>
+			<Command code="0A06" isSigned="" divider="10"/>
 			<Command code="0AE4" isSigned="" divider="10"/>
 			<Command code="0B0E" divider="1" interval="10"/>
 
@@ -1602,14 +1602,13 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0A1E" divider="100" interval="10"/>
 			<Command code="0A1F" divider="100" interval="10"/>
 
-
 		</Commands>
 		<!-- доступные для регулирования пределы -->
 		<Limits>
-			<Limit maxCode="0302" minCode="0301" upperCode="0306" unit="mA" show="max">Current</Limit>
-			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" unit="(deg)" show="both">NTC temperature</Limit>
-			<Limit minCode="0A12" maxCode="0A11" bottomCode="0A14" upperCode="0A13" unit="(deg)" show="both">TEC temperature</Limit>
-			<Limit maxCode="0A17" bottom="0.0" upper="4.0" show="max" unit="A">Max. TEC Current</Limit>
+			<Limit maxCode="0302" bottomCode="0301" upperCode="0306" show="max" unit="mA">LD current set up limit</Limit>
+			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" show="both" unit="(deg)">NTC temperature warning limits</Limit>
+			<Limit minCode="0A12" maxCode="0A11" bottomCode="0A14" upperCode="0A13" show="both" unit="(deg)">TEC temperature warning limits</Limit>
+			<Limit maxCode="0A17" bottom="0.0" upper="4.0" show="max" unit="A">TEC current limit</Limit>
 		</Limits>
 		<!--  калибровка -->
 		<CalibrationKoefs>
@@ -1660,11 +1659,11 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			</Led>
 			<Led label="IntLock">
 				<LedMask code="0800" mask="0002" maskColor="#ffff00">Interlock</LedMask>
-				<LedMask code="0800" mask="0020" maskColor="#ff0000">LD Overheat</LedMask>
+				<LedMask code="0800" mask="0020" maskColor="#ff0000">External NTC temperature exceeds limits</LedMask>
 			</Led>
 			<Led label="Error">
-				<LedMask code="0800" mask="0010" maskColor="#ffff00">Overheat warning</LedMask>
-				<LedMask code="0800" mask="0008" maskColor="#ff0000">Over current or Overheat</LedMask>
+				<LedMask code="0800" mask="0010" maskColor="#ffff00">LD temperature exceeds limits</LedMask>
+				<LedMask code="0800" mask="0008" maskColor="#ff0000">LD Over current</LedMask>
 				<LedMask code="0800" mask="0040" maskColor="#ff0000">TEC Error</LedMask>
 				<LedMask code="0800" mask="0080" maskColor="#ff0000">TEC Self-heat</LedMask>
 			</Led>
