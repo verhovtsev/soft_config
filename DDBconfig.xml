@@ -1257,20 +1257,22 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0A18" isSigned="" divider="10"/>
 			<Command code="0A1A"/>
 			<Command code="0A1E" divider="100" interval="10"/>
-			<Command code="0A1F" divider="100" interval="10"/>
+			<Command code="0A1F" divider="1" interval="10"/>
 
 		</Commands>
 		<!-- доступные для регулирования пределы -->
 		<Limits>
-			<Limit maxCode="0302" bottomCode="0301" upperCode="0306" show="max" unit="mA">LD current set up limit</Limit>
-			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" show="both" unit="(deg)">NTC temperature warning limits</Limit>
+			<Limit maxCode="0302" minCode="0301" upperCode="0306" show="max" unit="mA">LD current set up limit</Limit>
+			<Limit maxCode="0A17" min="0.0" upper="4.0" show="max" unit="A">TEC current limit</Limit>
 			<Limit minCode="0A12" maxCode="0A11" bottomCode="0A14" upperCode="0A13" show="both" unit="(deg)">TEC temperature warning limits</Limit>
-			<Limit maxCode="0A17" bottom="0.0" upper="4.0" show="max" unit="A">TEC current limit</Limit>
+			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" show="both" unit="(deg)">NTC temperature warning limits</Limit>
 		</Limits>
 		<!--  калибровка -->
 		<CalibrationKoefs>
-			<Calibrate code="030E" min="9500" max="10500">LD current calibration</Calibrate>
-			<Calibrate code="0A1E" min="9500" max="10500">TEC calibration</Calibrate>
+			<Calibrate code="030E" min="9500" max="10500">LD set current calibration</Calibrate>
+			<Calibrate code="0A1E" min="9500" max="10500">TEC set temperature calibration</Calibrate>
+			<Calibrate code="0A1F" min="3000" max="5000">LD NTC B25/100 coefficient</Calibrate>
+			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
 		</CalibrationKoefs>
 		<!-- список выводимых параметров.
     регистр необходимо соблюдать
@@ -1371,20 +1373,22 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0A18" isSigned="" divider="10"/>
 			<Command code="0A1A"/>
 			<Command code="0A1E" divider="100" interval="10"/>
-			<Command code="0A1F" divider="100" interval="10"/>
+			<Command code="0A1F" divider="1" interval="10"/>
 
 		</Commands>
 		<!-- доступные для регулирования пределы -->
 		<Limits>
-			<Limit maxCode="0302" bottomCode="0301" upperCode="0306" show="max" unit="mA">LD current set up limit</Limit>
-			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" show="both" unit="(deg)">NTC temperature warning limits</Limit>
+			<Limit maxCode="0302" minCode="0301" upperCode="0306" show="max" unit="mA">LD current set up limit</Limit>
+			<Limit maxCode="0A17" min="0.0" upper="4.0" show="max" unit="A">TEC current limit</Limit>
 			<Limit minCode="0A12" maxCode="0A11" bottomCode="0A14" upperCode="0A13" show="both" unit="(deg)">TEC temperature warning limits</Limit>
-			<Limit maxCode="0A17" bottom="0.0" upper="4.0" show="max" unit="A">TEC current limit</Limit>
+			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" show="both" unit="(deg)">NTC temperature warning limits</Limit>
 		</Limits>
 		<!--  калибровка -->
 		<CalibrationKoefs>
-			<Calibrate code="030E" min="9500" max="10500">LD current calibration</Calibrate>
-			<Calibrate code="0A1E" min="9500" max="10500">TEC calibration</Calibrate>
+			<Calibrate code="030E" min="9500" max="10500">LD set current calibration</Calibrate>
+			<Calibrate code="0A1E" min="9500" max="10500">TEC set temperature calibration</Calibrate>
+			<Calibrate code="0A1F" min="3000" max="5000">LD NTC B25/100 coefficient</Calibrate>
+			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
 		</CalibrationKoefs>
 		<!-- список выводимых параметров.
     регистр необходимо соблюдать
@@ -1485,21 +1489,23 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0A18" isSigned="" divider="10"/>
 			<Command code="0A1A"/>
 			<Command code="0A1E" divider="100" interval="10"/>
-			<Command code="0A1F" divider="100" interval="10"/>
+			<Command code="0A1F" divider="1" interval="10"/>
 
 
 		</Commands>
 		<!-- доступные для регулирования пределы -->
 		<Limits>
-			<Limit maxCode="0302" bottomCode="0301" upperCode="0306" show="max" unit="mA">LD current set up limit</Limit>
-			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" show="both" unit="(deg)">NTC temperature warning limits</Limit>
+			<Limit maxCode="0302" minCode="0301" upperCode="0306" show="max" unit="mA">LD current set up limit</Limit>
+			<Limit maxCode="0A17" min="0.0" upper="4.0" show="max" unit="A">TEC current limit</Limit>
 			<Limit minCode="0A12" maxCode="0A11" bottomCode="0A14" upperCode="0A13" show="both" unit="(deg)">TEC temperature warning limits</Limit>
-			<Limit maxCode="0A17" bottom="0.0" upper="4.0" show="max" unit="A">TEC current limit</Limit>
+			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" show="both" unit="(deg)">NTC temperature warning limits</Limit>
 		</Limits>
 		<!--  калибровка -->
 		<CalibrationKoefs>
-			<Calibrate code="030E" min="9500" max="10500">LD current calibration</Calibrate>
-			<Calibrate code="0A1E" min="9500" max="10500">TEC calibration</Calibrate>
+			<Calibrate code="030E" min="9500" max="10500">LD set current calibration</Calibrate>
+			<Calibrate code="0A1E" min="9500" max="10500">TEC set temperature calibration</Calibrate>
+			<Calibrate code="0A1F" min="3000" max="5000">LD NTC B25/100 coefficient</Calibrate>
+			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
 		</CalibrationKoefs>
 		<!-- список выводимых параметров.
     регистр необходимо соблюдать
@@ -1600,20 +1606,22 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0A18" isSigned="" divider="10"/>
 			<Command code="0A1A"/>
 			<Command code="0A1E" divider="100" interval="10"/>
-			<Command code="0A1F" divider="100" interval="10"/>
+			<Command code="0A1F" divider="1" interval="10"/>
 
 		</Commands>
 		<!-- доступные для регулирования пределы -->
 		<Limits>
-			<Limit maxCode="0302" bottomCode="0301" upperCode="0306" show="max" unit="mA">LD current set up limit</Limit>
-			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" show="both" unit="(deg)">NTC temperature warning limits</Limit>
+			<Limit maxCode="0302" minCode="0301" upperCode="0306" show="max" unit="mA">LD current set up limit</Limit>
+			<Limit maxCode="0A17" min="0.0" upper="4.0" show="max" unit="A">TEC current limit</Limit>
 			<Limit minCode="0A12" maxCode="0A11" bottomCode="0A14" upperCode="0A13" show="both" unit="(deg)">TEC temperature warning limits</Limit>
-			<Limit maxCode="0A17" bottom="0.0" upper="4.0" show="max" unit="A">TEC current limit</Limit>
+			<Limit minCode="0A05" maxCode="0A06" bottom="-10.0" upper="100.0" show="both" unit="(deg)">NTC temperature warning limits</Limit>
 		</Limits>
 		<!--  калибровка -->
 		<CalibrationKoefs>
-			<Calibrate code="030E" min="9500" max="10500">LD current calibration</Calibrate>
-			<Calibrate code="0A1E" min="9500" max="10500">TEC calibration</Calibrate>
+			<Calibrate code="030E" min="9500" max="10500">LD set current calibration</Calibrate>
+			<Calibrate code="0A1E" min="9500" max="10500">TEC set temperature calibration</Calibrate>
+			<Calibrate code="0A1F" min="3000" max="5000">LD NTC B25/100 coefficient</Calibrate>
+			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
 		</CalibrationKoefs>
 		<!-- список выводимых параметров.
     регистр необходимо соблюдать
