@@ -1049,9 +1049,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0200" divider="10"/>
 			<Command code="0201" divider="10"/>
 			<Command code="0202" divider="10"/>
-			<Command code="0300" divider="10"/>
-			<Command code="0301" divider="10" interval="100"/>
-			<Command code="0302" divider="10" interval="100"/>
+			<Command code="0300" divider="100"/>
+			<Command code="0301" divider="100" interval="100"/>
+			<Command code="0302" divider="100" interval="100"/>
 			<Command code="0307" divider="10"/>
 			<Command code="030E" divider="100" interval="10"/>
 			<Command code="0407" divider="10"/>
