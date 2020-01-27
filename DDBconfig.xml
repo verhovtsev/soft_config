@@ -66,9 +66,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 		</ParamControls>
@@ -148,9 +148,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 		</ParamControls>
@@ -230,9 +230,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 		</ParamControls>
@@ -321,9 +321,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 			<Param real="0AF4">Driver Temperature</Param>
@@ -415,9 +415,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 			<Param real="0AF4">Driver Temperature</Param>
@@ -509,9 +509,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 			<Param real="0AF4">Driver Temperature</Param>
@@ -603,9 +603,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 			<Param real="0AF4">Driver Temperature</Param>
@@ -697,9 +697,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 			<Param real="0AF4">Driver Temperature</Param>
@@ -791,9 +791,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 			<Param real="0AF4">Driver Temperature</Param>
@@ -885,9 +885,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 			<Param real="0AF4">Driver Temperature</Param>
@@ -978,9 +978,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 			<Param real="0AE4">NTC Temperature</Param>
@@ -1071,9 +1071,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 			<Param real="0AF4">Driver Temperature</Param>
@@ -1165,9 +1165,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Параметры с value "участвуют" в hide controls.
      -->
 		<ParamControls>
+			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">Current</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">Voltage</Param>
 			<Param real="0AF4">Driver Temperature</Param>
@@ -1262,10 +1262,10 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
 		</CalibrationKoefs>
 		<ParamControls>
+			<Param min="0A12" max="0A11" value="0A10" real="0A15">Temperature</Param>
+			<Param min="0301" max="0302" value="0300" real="0307">LD Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">LD Current</Param>
-			<Param min="0A12" max="0A11" value="0A10" real="0A15">Temperature</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">LD Voltage</Param>
 			<Param real="0A16">TEC Current</Param>
@@ -1365,10 +1365,10 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
 		</CalibrationKoefs>
 		<ParamControls>
+			<Param min="0A12" max="0A11" value="0A10" real="0A15">Temperature</Param>
+			<Param min="0301" max="0302" value="0300" real="0307">LD Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">LD Current</Param>
-			<Param min="0A12" max="0A11" value="0A10" real="0A15">Temperature</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">LD Voltage</Param>
 			<Param real="0A16">TEC Current</Param>
@@ -1468,10 +1468,10 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
 		</CalibrationKoefs>
 		<ParamControls>
+			<Param min="0A12" max="0A11" value="0A10" real="0A15">Temperature</Param>
+			<Param min="0301" max="0302" value="0300" real="0307">LD Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">LD Current</Param>
-			<Param min="0A12" max="0A11" value="0A10" real="0A15">Temperature</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">LD Voltage</Param>
 			<Param real="0A16">TEC Current</Param>
@@ -1570,10 +1570,10 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
 		</CalibrationKoefs>
 		<ParamControls>
+			<Param min="0A12" max="0A11" value="0A10" real="0A15">Temperature</Param>
+			<Param min="0301" max="0302" value="0300" real="0307">LD Current</Param>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
 			<Param min="0201" max="0202" value="0200">Duration</Param>
-			<Param min="0301" max="0302" value="0300" real="0307">LD Current</Param>
-			<Param min="0A12" max="0A11" value="0A10" real="0A15">Temperature</Param>
 			<Param real="0701">Serial Number</Param>
 			<Param real="0407">LD Voltage</Param>
 			<Param real="0A16">TEC Current</Param>
