@@ -1611,4 +1611,106 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			</Led>
 		</Leds>
 	</Device>
+	
+		<Device id="1140" name="SF8300" stopCommandDelayMs="50" minCommandDelayMs="10" maxCommandDelayMs="1000">
+		<!-- ID - hex число, stopCommandDelay - десятичное -->
+		<!-- Описание устройства -->
+		<Content>
+			<Image/>
+			<Description/>
+			<Link>https://www.maimanelectronics.com/</Link>
+		</Content>
+		<Commands>
+			<!-- Числа все Hex, кроме делителя - он десятичный. -->
+			<Command code="0100" divider="10" unit="Hz"/>
+			<Command code="0101" divider="10" interval="100" unit="Hz"/>
+			<Command code="0102" divider="10" interval="100" unit="Hz"/>
+			<Command code="0200" divider="10" unit="ms"/>
+			<Command code="0201" divider="10" interval="100" unit="ms"/>
+			<Command code="0202" divider="10" unit="ms"/>
+			<Command code="0300" divider="10" unit="mA"/>
+			<Command code="0301" divider="10" interval="100" unit="mA"/>
+			<Command code="0302" divider="10" unit="mA"/>
+			<Command code="0306" divider="10" interval="100" unit="mA"/>
+			<Command code="0307" divider="10" unit="mA"/>
+			<Command code="030E" divider="100"/>
+			<Command code="0407" divider="10" unit="V"/>
+			<Command code="0700"/>
+			<Command code="0701" interval="100"/>
+			<Command code="0800"/>
+			<Command code="0A05" isSigned="" divider="10" unit="(deg)" isTemperature="1"/>
+			<Command code="0A06" isSigned="" divider="10" unit="(deg)" isTemperature="1"/>
+			<Command code="0AE4" isSigned="" divider="10" unit="(deg)" isTemperature="1"/>
+			<Command code="0B0E" divider="1" interval="10"/>
+
+			<Command code="0A10" divider="100" unit="(deg)" isTemperature="1"/>
+			<Command code="0A11" divider="100" unit="(deg)" isTemperature="1"/>
+			<Command code="0A12" divider="100" unit="(deg)" isTemperature="1"/>
+			<Command code="0A13" divider="100" interval="100" unit="(deg)" isTemperature="1"/>
+			<Command code="0A14" divider="100" interval="100" unit="(deg)" isTemperature="1"/>
+			<Command code="0A15" divider="100" unit="(deg)" isTemperature="1"/>
+
+			<Command code="0A16" isSigned="" divider="10" unit="A"/>
+			<Command code="0A17" divider="10" unit="A"/>
+			<Command code="0A18" isSigned="" divider="10" unit="V"/>
+			<Command code="0A1A"/>
+			<Command code="0A1E" divider="100" interval="10"/>
+			<Command code="0A1F" divider="1" interval="10"/>
+		</Commands>
+		<Limits>
+			<Limit limitCode="0302" minCode="0301" maxCode="0306">LD current set up limit</Limit>
+			<Limit limitCode="0A17" minValue="0" maxValue="4">TEC current limit</Limit>
+			<Limit limitCode="0A12" minCode="0A14" maxCode="0A11">TEC temperature warning lower limit</Limit>
+			<Limit limitCode="0A11" minCode="0A12" maxCode="0A13">TEC temperature warning upper limit</Limit>
+			<Limit limitCode="0A05" minValue="-10" maxCode="0A06">NTC temperature warning lower limit</Limit>
+			<Limit limitCode="0A06" minCode="0A05" maxValue="100">NTC temperature warning upper limit</Limit>
+		</Limits>
+		<CalibrationKoefs>
+			<Calibrate code="030E" min="95" max="105">LD set current calibration</Calibrate>
+			<Calibrate code="0A1E" min="95" max="105">TEC set temperature calibration</Calibrate>
+			<Calibrate code="0A1F" min="3000" max="5000">LD NTC B25/100 coefficient</Calibrate>
+			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
+		</CalibrationKoefs>
+		<ParamControls>
+			<Param min="0101" max="0102" value="0100">Frequency</Param>
+			<Param min="0201" max="0202" value="0200">Duration</Param>
+			<Param min="0301" max="0302" value="0300" real="0307">LD Current</Param>
+			<Param min="0A12" max="0A11" value="0A10" real="0A15">Temperature</Param>
+			<Param real="0701">Serial Number</Param>
+			<Param real="0407">LD Voltage</Param>
+			<Param real="0A16">TEC Current</Param>
+			<Param real="0A18">TEC Voltage</Param>
+			<Param real="0AE4">External NTC Temperature</Param>
+		</ParamControls>
+		<BinaryOptions>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">LD Internal Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">LD Internal Enable</CheckBox>
+			<CheckBox code="0A1A" onCommand="0020" offCommand="0040" mask="0004">TEC Internal Temperature Set</CheckBox>
+			<CheckBox code="0A1A" onCommand="0400" offCommand="0200" mask="0010">TEC Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore External NTC Overheat</CheckBox>
+			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
+		</BinaryOptions>
+		<Buttons>
+			<Button name="laser" mask="02" code="0700" onCommand="0008" offCommand="0010"/>
+			<Button name="tec" mask="02" code="0A1A" onCommand="0008" offCommand="0010"/>
+		</Buttons>
+		<Leds>
+			<Led label="Laser">
+				<LedMask code="0700" mask="0002" maskColor="#00ff00" defaultColor="#171717"/>
+			</Led>
+			<Led label="TEC">
+				<LedMask code="0A1A" mask="0002" maskColor="#00ff00" defaultColor="#171717"/>
+			</Led>
+			<Led label="IntLock">
+				<LedMask code="0800" mask="0002" maskColor="#ffff00">Interlock</LedMask>
+				<LedMask code="0800" mask="0020" maskColor="#ff0000">External NTC temperature exceeds limits</LedMask>
+			</Led>
+			<Led label="Error">
+				<LedMask code="0800" mask="0010" maskColor="#ffff00">LD temperature exceeds limits</LedMask>
+				<LedMask code="0800" mask="0008" maskColor="#ff0000">LD Over current</LedMask>
+				<LedMask code="0800" mask="0040" maskColor="#ff0000">TEC Error</LedMask>
+				<LedMask code="0800" mask="0080" maskColor="#ff0000">TEC Self-heat</LedMask>
+			</Led>
+		</Leds>
+	</Device>
 </Config>
