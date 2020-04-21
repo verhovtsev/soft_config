@@ -76,8 +76,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
 		<!-- кнопочки доступные в программе. Аналогично чекбоксам, только тут чисто по протоколу -->
@@ -158,8 +158,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
 		<!-- кнопочки доступные в программе. Аналогично чекбоксам, только тут чисто по протоколу -->
@@ -240,8 +240,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
 		<!-- кнопочки доступные в программе. Аналогично чекбоксам, только тут чисто по протоколу -->
@@ -333,8 +333,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore LD Overheat Block</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -427,8 +427,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore LD Overheat Block</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -521,8 +521,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore LD Overheat Block</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -615,8 +615,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore LD Overheat Block</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -709,8 +709,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore LD Overheat Block</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -803,8 +803,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore LD Overheat Block</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -897,8 +897,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore LD Overheat Block</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -989,8 +989,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore LD Overheat Block</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -1083,8 +1083,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore LD Overheat Block</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -1177,8 +1177,8 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
     Могут также программироваться по ID лично в проге, тогда остальные поля оставлять пустыми,
     хотя можно попробовтаь комбинировать, но насколько синхронно это будет работать есть сомнения -->
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore LD Overheat Block</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -1273,12 +1273,7 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Param real="0AE4">External NTC Temperature</Param>
 		</ParamControls>
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">LD Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">LD Internal Enable</CheckBox>
-			<CheckBox code="0A1A" onCommand="0020" offCommand="0040" mask="0004">TEC Internal Temperature Set</CheckBox>
-			<CheckBox code="0A1A" onCommand="0400" offCommand="0200" mask="0010">TEC Internal Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore External NTC Overheat</CheckBox>
-			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
 		<Buttons>
 			<Button name="laser" mask="02" code="0700" onCommand="0008" offCommand="0010"/>
@@ -1376,10 +1371,10 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Param real="0AE4">External NTC Temperature</Param>
 		</ParamControls>
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">LD Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">LD Internal Enable</CheckBox>
-			<CheckBox code="0A1A" onCommand="0020" offCommand="0040" mask="0004">TEC Internal Temperature Set</CheckBox>
-			<CheckBox code="0A1A" onCommand="0400" offCommand="0200" mask="0010">TEC Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">LD Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">LD Digital Enable</CheckBox>
+			<CheckBox code="0A1A" onCommand="0020" offCommand="0040" mask="0004">TEC Digital Temperature Set</CheckBox>
+			<CheckBox code="0A1A" onCommand="0400" offCommand="0200" mask="0010">TEC Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore External NTC Overheat</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -1479,10 +1474,10 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Param real="0AE4">External NTC Temperature</Param>
 		</ParamControls>
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">LD Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">LD Internal Enable</CheckBox>
-			<CheckBox code="0A1A" onCommand="0020" offCommand="0040" mask="0004">TEC Internal Temperature Set</CheckBox>
-			<CheckBox code="0A1A" onCommand="0400" offCommand="0200" mask="0010">TEC Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">LD Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">LD Digital Enable</CheckBox>
+			<CheckBox code="0A1A" onCommand="0020" offCommand="0040" mask="0004">TEC Digital Temperature Set</CheckBox>
+			<CheckBox code="0A1A" onCommand="0400" offCommand="0200" mask="0010">TEC Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore External NTC Overheat</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -1581,10 +1576,10 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Param real="0AE4">External NTC Temperature</Param>
 		</ParamControls>
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">LD Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">LD Internal Enable</CheckBox>
-			<CheckBox code="0A1A" onCommand="0020" offCommand="0040" mask="0004">TEC Internal Temperature Set</CheckBox>
-			<CheckBox code="0A1A" onCommand="0400" offCommand="0200" mask="0010">TEC Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">LD Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">LD Digital Enable</CheckBox>
+			<CheckBox code="0A1A" onCommand="0020" offCommand="0040" mask="0004">TEC Digital Temperature Set</CheckBox>
+			<CheckBox code="0A1A" onCommand="0400" offCommand="0200" mask="0010">TEC Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore External NTC Overheat</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
@@ -1683,10 +1678,10 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Param real="0AE4">External NTC Temperature</Param>
 		</ParamControls>
 		<BinaryOptions>
-			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">LD Internal Current Set</CheckBox>
-			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">LD Internal Enable</CheckBox>
-			<CheckBox code="0A1A" onCommand="0020" offCommand="0040" mask="0004">TEC Internal Temperature Set</CheckBox>
-			<CheckBox code="0A1A" onCommand="0400" offCommand="0200" mask="0010">TEC Internal Enable</CheckBox>
+			<CheckBox code="0700" onCommand="0020" offCommand="0040" mask="0004">LD Digital Current Set</CheckBox>
+			<CheckBox code="0700" onCommand="0400" offCommand="0200" mask="0010">LD Digital Enable</CheckBox>
+			<CheckBox code="0A1A" onCommand="0020" offCommand="0040" mask="0004">TEC Digital Temperature Set</CheckBox>
+			<CheckBox code="0A1A" onCommand="0400" offCommand="0200" mask="0010">TEC Digital Enable</CheckBox>
 			<CheckBox code="0700" onCommand="4000" offCommand="8000" mask="0040">Ignore External NTC Overheat</CheckBox>
 			<CheckBox code="0700" onCommand="2000" offCommand="1000" mask="0080">Ignore IntLock</CheckBox>
 		</BinaryOptions>
