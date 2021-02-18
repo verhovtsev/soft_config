@@ -1851,7 +1851,7 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0A1E" divider="100" interval="10"/>
 			<Command code="0A1F" divider="1" interval="10"/>
 			
-			<Command code="0A21" divider="100"/>
+			<Command code="0A21"/>
 			<Command code="0A22"/>
 			<Command code="0A23"/>
 		</Commands>
@@ -1868,9 +1868,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Calibrate code="0A1E" min="95" max="105">TEC set temperature calibration</Calibrate>
 			<Calibrate code="0A1F" min="3000" max="5000">LD NTC B25/100 coefficient</Calibrate>
 			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
-			<Calibrate code="0A21" min="0.05" max="10">TEC P coefficient</Calibrate>
-			<Calibrate code="0A22" min="0" max="50000">TEC I/100 coefficient</Calibrate>
-			<Calibrate code="0A23" min="0" max="100">TEC D*1000 coefficient</Calibrate>
+			<Calibrate code="0A21" min="5" max="1000">TEC P coefficient</Calibrate>
+			<Calibrate code="0A22" min="0" max="50000">TEC I coefficient</Calibrate>
+			<Calibrate code="0A23" min="0" max="10000">TEC D coefficient</Calibrate>
 		</CalibrationKoefs>
 		<ParamControls>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
@@ -1963,7 +1963,7 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0A1E" divider="100" interval="10"/>
 			<Command code="0A1F" divider="1" interval="10"/>
 			
-			<Command code="0A21" divider="100"/>
+			<Command code="0A21"/>
 			<Command code="0A22"/>
 			<Command code="0A23"/>
 		</Commands>
@@ -1980,9 +1980,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Calibrate code="0A1E" min="95" max="105">TEC set temperature calibration</Calibrate>
 			<Calibrate code="0A1F" min="3000" max="5000">LD NTC B25/100 coefficient</Calibrate>
 			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
-			<Calibrate code="0A21" min="0.05" max="10">TEC P coefficient</Calibrate>
-			<Calibrate code="0A22" min="0" max="50000">TEC I/100 coefficient</Calibrate>
-			<Calibrate code="0A23" min="0" max="100">TEC D*1000 coefficient</Calibrate>
+			<Calibrate code="0A21" min="5" max="1000">TEC P coefficient</Calibrate>
+			<Calibrate code="0A22" min="0" max="50000">TEC I coefficient</Calibrate>
+			<Calibrate code="0A23" min="0" max="10000">TEC D coefficient</Calibrate>
 		</CalibrationKoefs>
 		<ParamControls>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
@@ -2075,7 +2075,7 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0A1E" divider="100" interval="10"/>
 			<Command code="0A1F" divider="1" interval="10"/>
 			
-			<Command code="0A21" divider="100"/>
+			<Command code="0A21"/>
 			<Command code="0A22"/>
 			<Command code="0A23"/>
 		</Commands>
@@ -2092,9 +2092,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Calibrate code="0A1E" min="95" max="105">TEC set temperature calibration</Calibrate>
 			<Calibrate code="0A1F" min="3000" max="5000">LD NTC B25/100 coefficient</Calibrate>
 			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
-			<Calibrate code="0A21" min="0.05" max="10">TEC P coefficient</Calibrate>
-			<Calibrate code="0A22" min="0" max="50000">TEC I/100 coefficient</Calibrate>
-			<Calibrate code="0A23" min="0" max="100">TEC D*1000 coefficient</Calibrate>
+			<Calibrate code="0A21" min="5" max="1000">TEC P coefficient</Calibrate>
+			<Calibrate code="0A22" min="0" max="50000">TEC I coefficient</Calibrate>
+			<Calibrate code="0A23" min="0" max="10000">TEC D coefficient</Calibrate>
 		</CalibrationKoefs>
 		<ParamControls>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
@@ -2187,7 +2187,7 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Command code="0A1E" divider="100" interval="10"/>
 			<Command code="0A1F" divider="1" interval="10"/>
 			
-			<Command code="0A21" divider="100"/>
+			<Command code="0A21"/>
 			<Command code="0A22"/>
 			<Command code="0A23"/>
 		</Commands>
@@ -2204,9 +2204,9 @@ Current Setpoint Absolute Accuracy: less then 1%</Description>
 			<Calibrate code="0A1E" min="95" max="105">TEC set temperature calibration</Calibrate>
 			<Calibrate code="0A1F" min="3000" max="5000">LD NTC B25/100 coefficient</Calibrate>
 			<Calibrate code="0B0E" min="3000" max="5000">External NTC B25/100 coefficient</Calibrate>
-			<Calibrate code="0A21" min="0.05" max="10">TEC P coefficient</Calibrate>
-			<Calibrate code="0A22" min="0" max="50000">TEC I/100 coefficient</Calibrate>
-			<Calibrate code="0A23" min="0" max="100">TEC D*1000 coefficient</Calibrate>
+			<Calibrate code="0A21" min="5" max="1000">TEC P coefficient</Calibrate>
+			<Calibrate code="0A22" min="0" max="50000">TEC I coefficient</Calibrate>
+			<Calibrate code="0A23" min="0" max="10000">TEC D coefficient</Calibrate>
 		</CalibrationKoefs>
 		<ParamControls>
 			<Param min="0101" max="0102" value="0100">Frequency</Param>
